@@ -1,0 +1,1271 @@
+*{
+    padding:0;
+    margin:0;
+    font-size:0.22rem;
+    outline:none;
+    font-family: "黑体";
+}
+li{
+    list-style-type: none;
+}
+body{
+    background: #f1f2f6;
+}
+.swiper-container{
+    height: 6.4rem;
+}
+.commodityTop{
+    width: 100%;
+    height: 6.4rem;
+    font-size:0;
+}
+.commodityTop img{
+    width: 100%;
+    height: 100%;
+}
+.commodityTitle{
+    font-size: 0.26rem;
+    padding:0.2rem 0.2rem 0.23rem;
+    background: #fff;
+    border-bottom:1px solid #e3e6ec;
+}
+.commodityTitle > p:nth-of-type(1){
+    margin-top: 0.2rem;
+}
+.commodityTitle > p:nth-of-type(2){
+    margin-top: 0.12rem;
+    color: #e7180d;
+    font-size:0.2rem;
+}
+.commodityTitle > p:nth-of-type(2) span{
+    font-size:0.24rem;
+    font-weight: bold;
+}
+.mySelect{
+    height: 0.94rem;
+    margin-top:0.15rem;
+    background: #fff;
+    line-height:0.94rem;
+    text-indent:0.2rem;
+    border-bottom:1px solid #e3e6ec;
+}
+.mySelect span{
+    color: #929292;
+}
+.commodityContent{
+    margin-top:0.15rem;
+    padding:0 0.2rem;
+    background: #fff;
+}
+.commodityContent p{
+    font-size: 0.24rem;
+    font-weight:bold;
+    line-height: 0.74rem;
+}
+.commodityContent img{
+    width: 100%;
+}
+.commodityContent>div{
+    font-size:0;
+}
+.commodityDetail{
+    margin-top:0.15rem;
+    background: #fff;
+    padding:0 0.2rem 0.5rem;
+    margin-bottom:1.2rem;
+
+}
+.commodityDetail >p:nth-of-type(1){
+    font-size: 0.24rem;
+    font-weight: bold;
+    padding-top:0.16rem;
+    line-height: 0.74rem;
+    border-bottom:1px solid #e3e6ec;
+}
+.commodityDetail >p:nth-of-type(2){
+    line-height: 0.33rem;
+    padding:0.24rem 0 0.3rem;
+}
+.immediate{
+    height: 0.9rem;
+    font-size: 0.3rem;
+    color: #fff;
+    background: #d42d25;
+    border:none;
+    width: 100%;
+    position: fixed;
+    bottom:0;
+}
+.specifications{
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+    position: fixed;
+    top:0;
+    left:0;
+    bottom:0;
+    right:0;
+    z-index: 100;
+    display: none;
+}
+.specifications >div{
+    width: 100%;
+    height: auto;
+    background: #fff;
+    position: fixed;
+    bottom:0;
+}
+.choose{
+    height: 1.59rem;
+    padding:0 0.3rem;
+    border-bottom:1px solid #efefef;
+}
+.choose img{
+    width: 1.82rem;
+    height: 1.82rem;
+    border-radius:0.2rem;
+    margin-top:-0.45rem;
+    border:1px solid #ffffff;
+    float: left;
+}
+.choose p{
+    float: left;
+    margin-left:0.35rem;
+    margin-top:0.3rem;
+    line-height: 0.57rem;
+    color: #aaa;
+}
+.choose p span:nth-of-type(1){
+    color: #e7180d;
+    font-size: 0.35rem;
+    font-weight: bold;
+    margin-top:0.6rem;
+}
+.distribution{
+    padding:0 0.3rem;
+    border-bottom:1px solid #efefef;
+}
+.distribution>p{
+    color: #aaa;
+    line-height: 0.6rem;
+}
+.distribution ul{
+    overflow: hidden;
+    padding-bottom:0.18rem;
+}
+.distribution ul li{
+    width: 1.2rem;
+    height: 0.38rem;
+    border:1px solid #333;
+    color: #333;
+    border-radius:0.05rem;
+    float: left;
+    line-height: 0.38rem;
+    text-align: center;
+    margin-right: 0.25rem;
+    cursor: pointer;
+    margin-bottom:0.15rem;
+}
+.distribution ul li:nth-of-type(4n){
+    margin-right:0;
+}
+.distribution ul li.active{
+    border:1px solid #d32d25;
+    color: #d32d25;
+}
+.store{
+    color: #aaa;
+    padding:0 .38rem;
+    line-height: 0.7rem;
+    border-bottom:1px solid #efefef;
+}
+.store span{
+    color: #000;
+    cursor: pointer;
+}
+.distribution.color,.distribution.size{
+    border:none;
+}
+.distribution.color ul,.distribution.size ul{
+    padding:0;;
+}
+.number{
+    padding:0 0.3rem;
+    overflow: hidden;
+    margin-top:0.2rem;
+}
+.number p{
+    float: left;
+    color: #aaa;
+}
+.number ul{
+    float: right;
+    overflow: hidden;
+}
+.number li{
+    float: left;
+    text-align: center;
+    line-height: 0.38rem;
+}
+.number li:nth-of-type(1){
+    width: 0.38rem;
+    height: 0.38rem;
+    border:1px solid #3f3f3f;
+    border-bottom-left-radius: 0.05rem;
+    border-top-left-radius: 0.05rem;
+}
+.number li:nth-of-type(2){
+    width: 0.79rem;
+    height: 0.38rem;
+    border-top:1px solid #3f3f3f;
+    border-bottom:1px solid #3f3f3f;
+}
+.number li:nth-of-type(3){
+    width: 0.38rem;
+    height: 0.38rem;
+    border:1px solid #3f3f3f;
+    border-bottom-right-radius: 0.05rem;
+    border-top-right-radius: 0.05rem;
+}
+.confirm{
+    height: 0.9rem;
+    font-size: 0.3rem;
+    color: #fff;
+    background: #d42d25;
+    border:none;
+    width: 100%;
+    margin-top:0.3rem;
+}
+.cancel{
+    width: 0.2rem;
+    height: 0.2rem;
+    border:none;
+    position: absolute;
+    background: url(../img/cancel.jpg) 0 0/100% 100% no-repeat;
+    top:0.2rem;
+    right:0.3rem;
+}
+.confirmTop{
+    height: 1.83rem;
+    background: #fff;
+    padding:0 0.3rem;
+    background: url("../img/border.jpg") repeat-x 0 100%/auto 0.06rem,url("../img/dotWhite.jpg");
+    cursor: pointer;
+}
+.confirmTop >p:nth-of-type(1){
+    font-size: 0.26rem;
+    font-weight:bold;
+    padding:0.35rem 0.4rem 0.2rem;
+    overflow: hidden;
+}
+.confirmTop >p:nth-of-type(1) span:nth-of-type(1){
+    float: left;
+}
+.confirmTop >p:nth-of-type(1) span:nth-of-type(2){
+    float: right;
+}
+.confirmTop >p:nth-of-type(2){
+    color: #333;
+    line-height: 0.33rem;
+    padding:0 0.4rem;
+    background: url("../img/arrowRight.jpg") 100% 0.05rem/0.15rem 0.25rem no-repeat,url("../img/address.jpg") 0 0/0.28rem 0.35rem no-repeat;
+}
+.distributionMsg{
+    margin-top:0.15rem;
+    background: #fff;
+    padding:0 0.3rem;
+}
+.disMode{
+    height: 0.79rem;
+    overflow: hidden;
+    border-bottom:1px solid #f0f2f5;
+}
+.disMode p,.disStore p:nth-of-type(1){
+    line-height: 0.79rem;
+    font-size: 0.24rem;
+    color: #aaa;
+    width: 1.4rem;
+    float: left;
+}
+.disMode ul{
+    overflow: hidden;
+    width: 3.5rem;
+    float: left;
+}
+.disMode li{
+    cursor: pointer;
+    float: left;
+    width: 1.2rem;
+    height: 0.38rem;
+    line-height: 0.38rem;
+    color: #333;
+    margin-top:0.18rem;
+    border:1px solid #333;
+    border-radius:0.05rem;
+    text-align: center;
+    margin-right:0.25rem;
+}
+.disMode li.active{
+    border:1px solid #d32d25;
+    color: #d32d25;
+}
+.disStore{
+    height: 0.8rem;
+    background: url("../img/arrowRight.jpg") 100% 50%/0.15rem 0.25rem no-repeat;
+}
+.disStore p:nth-of-type(2){
+    line-height: 0.79rem;
+    font-size: 0.24rem;
+    color: #333;
+    cursor: pointer;
+}
+.confirmDetail{
+    background: #fff;
+    margin-top:0.15rem;
+    cursor: pointer;
+}
+.confirmDetail>p{
+    height: 0.75rem;
+    padding:0 0.3rem;
+    line-height: 0.75rem;
+    color: #aaa;
+}
+.conContent{
+    height: 2rem;
+    padding:0 0.3rem;
+    background: #fafafa;
+    cursor: pointer;
+}
+.conContent >img{
+    width: 26%;
+    height: 1.5rem;
+    border:1px solid #e6e6e6;
+    margin-top:0.1rem;
+    float: left;
+}
+.conContent>div{
+    width: 72%;
+    float: left;
+}
+.conContent>div >p:nth-of-type(1){
+    line-height: 0.26rem;
+    margin-top: 0.18rem;
+    padding-left:0.2rem;
+}
+.conContent>div >p:nth-of-type(2){
+    font-size: 0.18rem;
+    margin: 0.17rem 0;
+    color: #666;
+    padding-left:0.3rem;
+}
+.conContent>div >p:nth-of-type(3){
+    padding-left:0.3rem;
+    font-size:0.18rem;
+    color: #e7180d;
+    overflow: hidden;
+}
+.conContent>div >p:nth-of-type(3) span:nth-of-type(1){
+    font-size:0.24rem;
+    float: left;
+}
+.conContent>div >p:nth-of-type(3) span:nth-of-type(2){
+     float: right;
+    color: #333;
+ }
+.conTip{
+    background: #fff;
+    padding:0 0.3rem;
+    overflow: hidden;
+    margin-top:0.1rem;
+    padding-bottom:0.2rem;
+}
+.conTip p:nth-of-type(1){
+    width: 1.2rem;
+    float: left;
+    color: #aaa;
+}
+.conTip textarea{
+    width: 4.6rem;
+    float: left;
+    color: #333;
+    line-height: 0.35rem;
+    border:none;
+}
+.coupon{
+    background: #fff;
+    margin-top:0.15rem;
+    padding:0 0.3rem;
+}
+.coupon p{
+    line-height: 0.76rem;
+    border-bottom:1px solid #f0f2f5;
+    overflow: hidden;
+}
+.coupon p:nth-of-type(3){
+    border:none;
+}
+.coupon p:nth-of-type(2){
+    background: url("../img/arrowRight.jpg") 100% 50%/0.15rem 0.25rem no-repeat;
+    padding-right:0.5rem;
+    cursor: pointer;
+}
+.coupon p span:nth-of-type(1){
+    float: left;
+    color: #aaa;
+}
+.coupon p span:nth-of-type(2){
+    float: right;
+    color: #333;
+    cursor: pointer;
+}
+.payStyle{
+    line-height: 0.77rem;
+    margin-top: 0.15rem;
+    padding:0 0.3rem;
+    background: #fff;
+    margin-bottom:0.95rem;
+    cursor: pointer;
+}
+.payStyle >p{
+    width: 100%;
+    overflow: hidden;
+    background: url("../img/arrowRight.jpg") 100% 50%/0.15rem 0.25rem no-repeat,url(../img/dotWhite.jpg);
+}
+.payStyle span:nth-of-type(1){
+    color: #aaa;
+    float: left;
+}
+.payStyle span:nth-of-type(2){
+    color: #333;
+    float: right;
+    padding-right:0.5rem;
+}
+.payNumber{
+    height: 0.84rem;
+    position: fixed;
+    bottom:0;
+    background: #fff;
+    width: 100%;
+}
+.payNumber p{
+    width: 68%;
+    float: left;
+    height:100%;
+    padding-right:2%;
+    line-height: 0.84rem;
+    text-align: right;
+}
+.payNumber span{
+    color: #e7180d;
+}
+.payNumber button{
+    width: 30%;
+    float: left;
+    height: 100%;
+    border:none;
+    background: #e7180d;
+    color: #fff;
+}
+.orderTop{
+    padding:0 0.3rem;
+    background: #fff;
+}
+.arrive {
+    height: 0.88rem;
+    border-bottom:1px solid #f0f2f5;
+}
+.arrive p:nth-of-type(1){
+    width: 50%;
+    float: left;
+    font-size: 0.26rem;
+    line-height: 0.88rem;
+    color: #57cb44;
+    background: url("../img/arrowRight.jpg") no-repeat 100% 50%/0.15rem 0.25rem;
+}
+.arrive p:nth-of-type(2){
+    width: 50%;
+    line-height: 0.88rem;
+    float: left;
+    text-align: right;
+    color: #333;
+}
+.orderAddr{
+    background: url("../img/address.jpg") no-repeat 0 50%/0.28rem 0.35rem;
+    height: 0.58rem;
+    line-height: 0.33rem;
+    text-indent:0.45rem;
+    padding-top:0.3rem;
+    color: #666;
+}
+.orderBtn{
+    width: 100%;
+    background: #fff;
+    height: 0.8rem;
+    border-bottom:1px solid #e5e8ee;
+    border-top:1px solid #e5e8ee;
+}
+.orderBtn button{
+    float: left;
+    width: 1.2rem;
+    height: 0.38rem;
+    line-height: 0.38rem;
+    color: #333;
+    margin-top:0.18rem;
+    border:1px solid #333;
+    border-radius:0.05rem;
+    text-align: center;
+    margin-right:0.25rem;
+    background: #fff;
+}
+.orderBtn button.active{
+    border:1px solid #e21a1a;
+    color: #e21a1a;
+}
+.orderBtn button:nth-of-type(1){
+    margin-left:1rem;
+}
+.riderPhone{
+    height: 0.8rem;
+    background: #fcf8ed;
+    width: 100%;
+    line-height: 0.8rem;
+}
+.riderPhone p{
+    margin-left:2rem;
+    background: url("../img/phone.png") no-repeat 2.13rem 50%/auto 100%;
+    cursor: pointer;
+}
+.distributionCost{
+    height: 0.7rem;
+    padding:0 0.3rem;
+    line-height: 0.7rem;
+    border-bottom:1px solid #f0f2f5;
+}
+.distributionCost p:nth-of-type(1){
+    float: left;
+    color: #aaa;
+}
+.distributionCost p:nth-of-type(2){
+    float: right;
+    color: #333;
+}
+.orderTotal{
+    height: 0.7rem;
+    line-height: 0.7rem;
+    background: #fff;
+    padding:0 0.3rem;
+    text-align: right;
+}
+.orderTotal span{
+    color: #e21a1a;
+}
+.orderBottom{
+    padding:0 0.3rem;
+    margin-top:0.15rem;
+    background: #fff;
+    margin-bottom:0.3rem;
+}
+.orderBottom>div{
+    height: 0.8rem;
+    line-height: 0.8rem;
+    border-bottom:1px solid #f0f2f5;
+}
+.orderBottom>div:nth-last-of-type(1){
+    border:none;
+}
+.orderBottom>div p:nth-of-type(1){
+    float: left;
+    color: #aaa;
+    width: 1.4rem;
+}
+.orderBottom>div p:nth-of-type(2){
+    float: left;
+    color: #333;
+}
+.orderPayTop{
+    height: 0.86rem;
+    background: #fdf8ed;
+    padding:0 0.3rem;
+    border-bottom:1px solid #e1e5eb;
+}
+.orderPayTop p:nth-of-type(1){
+    width: 50%;
+    float: left;
+    line-height: 0.86rem;
+}
+.orderPayTop p:nth-of-type(1) span{
+    color: #e21a1a;
+}
+.orderPayTop p:nth-of-type(2){
+    width: 50%;
+    float: left;
+    line-height: 0.86rem;
+    color: #666;
+    text-align: right;
+}
+.orderPatCom{
+    margin-top:0.15rem;
+    background: #fff;
+    height: 1.87rem;
+    border-bottom:1px solid #e1e5eb;
+    overflow: hidden;
+    padding:0 0.3rem;
+    cursor: pointer;
+}
+.orderPatCom >div:nth-of-type(1){
+    width: 1.56rem;
+    height: 1.56rem;
+    float: left;
+    border:1px solid #e4e4e4;
+    margin-top:0.08rem;
+}
+.orderPatCom >div:nth-of-type(1) img{
+    width: 1.46rem;
+    height: 1.46rem;
+    margin:0.05rem;
+}
+.orderPatCom>div:nth-of-type(2){
+    margin-left:0.2rem;
+    float: left;
+    width: 4.0rem;
+}
+.orderPatCom>div:nth-of-type(2) p:nth-of-type(1){
+    line-height: 0.3rem;
+    margin-top:0.16rem;
+}
+.orderPatCom>div:nth-of-type(2) p:nth-of-type(2){
+    color: #666;
+    font-size:0.2rem;
+    margin-top:0.16rem;
+}
+.orderPayStyle{
+    background: #fff;
+    margin-top:0.15rem;
+}
+.orderPayStyle>p:nth-of-type(1){
+    padding:0 0.3rem;
+    height: 0.76rem;
+    line-height: 0.76rem;
+    color: #333;
+    border-bottom:1px solid #eaeaea;
+}
+.orderPayStyle>div{
+    height: 1rem;
+    border-bottom:1px solid #eaeaea;
+    background: url("../img/weixin.png") no-repeat 3% 50%/0.4rem 0.38rem;
+}
+.orderPayStyle>div>p{
+    float: left;
+    padding-left:0.7rem;
+    margin-top: 0.15rem;
+}
+.orderPayStyle>div>p>span:nth-of-type(1){
+    font-size: 0.25rem;
+    line-height: 0.4rem;
+    color: #333;
+}
+.orderPayStyle>div>p>span:nth-of-type(2){
+    font-size: 0.2rem;
+    color: #666;
+}
+.orderPayStyle>div>input{
+    float: right;
+    width: 0.32rem;
+    height: 0.32rem;
+    margin-top:0.28rem;
+    margin-right:0.3rem;
+}
+.orderPayBtn{
+    border:none;
+    background: #e7180d;
+    font-size:0.24rem;
+    height: 0.8rem;
+    width: 100%;
+    color: #fff;
+    margin-top:0.15rem;
+}
+.orderPayTip{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background: rgba(0,0,0,0.7);
+    display: none;
+}
+.orderPayTip>div{
+    height: 2.43rem;
+    width: 4.2rem;
+    background: #fff;
+    border-radius:0.05rem;
+    position: absolute;
+    top:50%;
+    left:50%;
+    margin-top: -1.2rem;
+    margin-left:-2.1rem;
+}
+.orderPayTip>div>p:nth-of-type(1){
+    font-size: 0.28rem;
+    color: #222;
+    text-align: center;
+    margin-top:0.3rem;
+}
+.orderPayTip>div>p:nth-of-type(2){
+    color: #222;
+    text-align: center;
+    line-height: 0.26rem;
+    margin-top:0.3rem;
+    padding:0 0.3rem;
+}
+.orderPayTip>div>ul{
+    height: 0.78rem;
+    line-height: 0.78rem;
+    overflow: hidden;
+    position: absolute;
+    bottom:-0.01rem;
+    width: 100%;
+}
+.orderPayTip>div>ul>li{
+    width: 50%;
+    float: left;
+    text-align: center;
+    cursor: pointer;;
+}
+.orderPayTip>div>ul>li:nth-of-type(1){
+    color: #222;
+    border-top:1px solid #e7180d;
+    border-bottom-left-radius: 0.05rem;
+    border-bottom:1px solid #e7180d;
+}
+.orderPayTip>div>ul>li:nth-of-type(2){
+    background: #e7180d;
+    color: #fff;
+    border-bottom-right-radius: 0.05rem;
+}
+.orderCon>div> p:nth-of-type(1){
+    margin-top: 0.7rem;
+}
+.orderConTip{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background: rgba(0,0,0,0.7);
+    display: none;
+}
+.orderConTip>div{
+    height: 2.43rem;
+    width: 4.2rem;
+    background: #fff;
+    border-radius:0.05rem;
+    position: absolute;
+    top:50%;
+    left:50%;
+    margin-top: -1.2rem;
+    margin-left:-2.1rem;
+}
+.orderConTip>div>p:nth-of-type(1){
+    padding:0 0.3rem;
+    line-height: 0.3rem;
+    margin-top: 0.45rem;
+    text-align: center;
+}
+.orderConTip>div>button{
+    height: 0.78rem;
+    line-height: 0.78rem;
+    overflow: hidden;
+    position: absolute;
+    bottom:0;
+    width: 100%;
+    border:none;
+    background: #e7180d;
+    color: #fff;
+}
+.orderConTip.delivery >div>p{
+    font-size:0.3rem;
+    margin-top:0.55rem;
+}
+.orderBot{
+    width: 100%;
+    height: 0.86rem;
+    background: #fff;
+    border-top:1px solid #d5d9de;
+    position: fixed;
+    bottom:0;
+}
+.orderBot li{
+    float: left;
+    width: 33%;
+    text-align: center;
+    color: #aaa;
+    height: 100%;
+    line-height: 1.3rem;
+    cursor: pointer;
+}
+.orderBot li:nth-of-type(1){
+    background: url("../img/shop.png") no-repeat 50% 10%/0.4rem auto;
+}
+.orderBot li:nth-of-type(1).active{
+    background: url("../img/shopActive.png") no-repeat 50% 10%/0.4rem auto;
+    color: #081762;
+}
+.orderBot li:nth-of-type(2){
+    background: url("../img/order.png") no-repeat 50% 10%/0.4rem auto;
+}
+.orderBot li:nth-of-type(2).active{
+    background: url("../img/orderActive.png") no-repeat 50% 10%/0.4rem auto;
+    color: #081762;
+}
+.orderBot li:nth-of-type(3){
+    background: url("../img/work.png") no-repeat 50% 10%/0.4rem auto;
+}
+.orderBot li:nth-of-type(3).active{
+    background: url("../img/workActive.png") no-repeat 50% 10%/0.4rem auto;
+    color: #081762;
+}
+.comList li{
+    border-top:1px solid #d5d9de;
+    margin-bottom:0.15rem;
+}
+.comListTop{
+    height: 0.66rem;
+    background: #fff;
+    overflow: hidden;
+}
+.comListTop>img{
+    width: 0.44rem;
+    height: 0.44rem;
+    float: left;
+    margin-left:0.2rem;
+    margin-top:0.11rem;
+}
+.comListTop>p:nth-of-type(1){
+    line-height: 0.66rem;
+    margin-left:0.2rem;
+    float: left;
+    color: #222;
+}
+.comListTop>p:nth-of-type(2){
+    line-height: 0.66rem;
+    margin-right:0.2rem;
+    float: right;
+    color: #e7180d;
+    font-size: 0.26rem;
+    font-weight: bold;
+}
+.comListTop>p:nth-of-type(2).active{
+    color: #666;
+}
+.comListTop>p:nth-of-type(3){
+    line-height: 0.66rem;
+    font-size: 0.2rem;
+    margin-right:0.1rem;
+    float: right;
+    color: #666;
+}
+.orderMore{
+    background: #fff;
+    border:none;
+    border-top:1px solid #d5d9de;
+    color: #aaa;
+    margin-bottom:1rem;
+    margin-top:0.15rem;
+    height:0.68rem;
+    width: 100%;
+}
+.comListCon{
+    overflow: hidden;
+    height: 1.48rem;
+    cursor: pointer;
+    background: #f6f6f6;
+}
+.comListCon >div:nth-of-type(1){
+    width: 1.24rem;
+    height: 1.24rem;
+    border:1px solid #d5d9de;
+    float: left;
+    margin-top:0.12rem;
+    margin-left:0.2rem;
+}
+.comListCon >div:nth-of-type(1) img{
+    width: 1.18rem;
+    height: 1.18rem;
+    margin:0.03rem;
+}
+.comListCon>div:nth-of-type(2){
+    width: 4rem;
+    float: left;
+    margin-left:0.2rem;
+}
+.comListCon>div:nth-of-type(2)>p:nth-of-type(1){
+    line-height: 0.26rem;
+    margin-top:0.15rem;
+}
+.comListCon>div:nth-of-type(2)>p:nth-of-type(2){
+    font-size: 0.2rem;
+    color: #666;
+    margin-top:0.18rem;
+}
+.comListCon>p{
+    float: left;
+    margin-top:0.8rem;
+    color: #222;
+}
+.orderPaid{
+    height: 0.68rem;
+    padding:0 0.3rem;
+    line-height: 0.68rem;
+    background: #fff;
+    overflow: hidden;
+    color: #222;
+}
+.orderPaid p:nth-of-type(1){
+    width: 50%;
+    float: left;
+    font-size: 0.2rem;
+}
+.orderPaid p:nth-of-type(2){
+    width: 50%;
+    float: left;
+    text-align: right;
+}
+.storeList li{
+    height: 1.4rem;
+    background: #fff;
+    padding:0 0.3rem;
+    color: #333;
+    overflow: hidden;
+    margin-top:0.15rem;
+}
+.storeList li:nth-of-type(1){
+    margin:0;
+}
+.storeList li p:nth-of-type(1){
+    font-size:0.28rem;
+    margin:0.3rem 0 0.24rem;
+}
+.personList li{
+    height: 0.75rem;
+    line-height: 0.75rem;
+    background: #fff;
+    padding:0 0.3rem;
+    margin-bottom:0.15rem;
+    text-indent: 0.6rem;
+    cursor: pointer;
+}
+.personList li:nth-of-type(1) p{
+    background: url("../img/perAddress.jpg") no-repeat 0 50%/0.35rem 0.35rem,url("../img/arrowRight.jpg") no-repeat 100% 50%/0.15rem 0.25rem;
+}
+.personList li:nth-of-type(2) p{
+    background: url("../img/perPage.jpg") no-repeat 0 50%/0.35rem 0.35rem,url("../img/arrowRight.jpg") no-repeat 100% 50%/0.15rem 0.25rem;
+}
+.personList li:nth-of-type(3) p{
+    background: url("../img/perShe.jpg") no-repeat 0 50%/0.35rem 0.35rem,url("../img/arrowRight.jpg") no-repeat 100% 50%/0.15rem 0.25rem;
+}
+.addAddr{
+    border:none;
+    width: 100%;
+    height: 0.9rem;
+    background: #d32d25;
+    color: #fff;
+    font-size: 0.3rem;
+    position: fixed;
+    bottom:0;
+}
+.addrList{
+    padding-bottom:1rem;
+    color: #333;
+}
+.addrList li>div:nth-of-type(1){
+    background: #fff;
+    padding:0 0.3rem;
+}
+.addrList li>div:nth-of-type(1) p:nth-of-type(1){
+    line-height: 0.76rem;
+    font-size: 0.26rem;
+    overflow: hidden;
+}
+.addrList li>div:nth-of-type(1) p:nth-of-type(1) span:nth-of-type(1){
+    float: left;
+    font-size: 0.26rem;
+}
+.addrList li>div:nth-of-type(1) p:nth-of-type(1) span:nth-of-type(2){
+    float: right;
+    font-size: 0.26rem;
+}
+.addrList li>div:nth-of-type(1) p:nth-of-type(2){
+    padding-bottom:0.2rem;
+}
+.addrList li>div:nth-of-type(2){
+    height: 0.6rem;
+    background: #f8f8f9;
+    border-bottom:1px solid #e4e8ed;
+    margin-bottom:0.15rem;
+}
+.addrList button:nth-of-type(1){
+    width: 1rem;
+    height: 0.34rem;
+    border:none;
+    background: url("../img/delete.png") no-repeat 0 0/auto 100%;
+    text-indent:0.35rem;
+    float: right;
+    margin-right:0.2rem;
+    margin-top:0.13rem;
+}
+.addrList button:nth-of-type(2){
+    width: 1rem;
+    height: 0.34rem;
+    border:none;
+    background: url("../img/edit.png") no-repeat 0 0/auto 100%;
+    text-indent:0.35rem;
+    float: right;
+    margin-top:0.13rem;
+}
+.newAddrList{
+    background: #fff;
+}
+.newAddrList li{
+    height: 0.8rem;
+    padding:0 3%;
+    overflow: hidden;
+    border-top:1px solid #e5e9ee;
+    font-size: 0.24rem;
+}
+.newAddrList li label{
+    width: 25%;
+    float: left;
+    height: 0.4rem;
+    margin-top:0.2rem;
+    line-height: 0.4rem;
+    color: #333;
+}
+.newAddrList li input{
+    height: 0.4rem;
+    width: 69%;
+    line-height: 0.4rem;
+    border:none;
+    margin-top:0.2rem;
+}
+.newAddrList li:nth-of-type(3){
+    background: url("../img/arrowRight.jpg") no-repeat 97% 50%/0.15rem 0.25rem;
+}
+.newAddrList li:nth-of-type(3) input{
+    text-align: right;
+}
+.newAddrList li:nth-of-type(4){
+    height: 1.8rem;
+    border-bottom:1px solid #e5e9ee;
+}
+.newAddrList li:nth-of-type(4) textarea{
+    height: 1.6rem;
+    border:none;
+    margin-top:0.1rem;
+    width: 100%;
+}
+.save{
+    margin-top: 0.15rem;
+    width: 100%;
+    background: #d32d25;
+    height: 0.9rem;
+    border:none;
+    font-size: 0.3rem;
+    color: #fff;
+}
+.service{
+    background: #fff;
+    position: relative;
+    top:0;
+    height: 5.9rem;
+}
+.service img{
+    width: 2.1rem;
+    height: 2.1rem;
+    position: absolute;
+    top: 0.4rem;
+    left: 50%;
+    margin-left:-1.05rem;
+}
+.service p{
+    width: 100%;
+    color: #333;
+    line-height: 0.28rem;
+    top:2.9rem;
+    position: absolute;
+    text-align: center;
+}
+.service button{
+    width: 3.82rem;
+    height: 0.89rem;
+    background: url("../img/phoneNum.png") no-repeat 0 0/100% 100%;
+    color: #fff;
+    font-size: 0.26rem;
+    border:none;
+    position: absolute;
+    top: 4.31rem;
+    left:50%;
+    margin-left:-1.91rem;
+}
+.statusList{
+    margin-top:0.4rem;
+}
+.statusList li{
+    height: 1.51rem;
+}
+.statusList li >p:nth-of-type(1){
+    width: 1.11rem;
+    color: #666;
+    float: left;
+    margin-right:0.15rem;
+    text-align: right;
+}
+.statusList li >div:nth-of-type(1){
+    width: 0.29rem;
+    color: #666;
+    float: left;
+    margin-right:0.3rem;
+    height: 1.51rem;
+}
+.statusList li >p:nth-of-type(2){
+    width: 4.2rem;
+    color: #666;
+    float: left;
+
+}
+.statusList li>p:nth-of-type(1) span:nth-of-type(1){
+    font-size: 0.26rem;
+}
+.statusList li>p:nth-of-type(1) span:nth-of-type(2){
+    margin-top:0.1rem;
+}
+.statusList li>p:nth-of-type(2) span:nth-of-type(1){
+    font-size: 0.26rem;
+}
+.statusList li>p:nth-of-type(2) span:nth-of-type(2){
+    line-height: 0.5rem;
+}
+.statusList li>div>div:nth-of-type(1){
+    width: 0.29rem;
+    height: 0.29rem;
+    background: #bfbfc0;
+    border-radius:0.29rem;
+}
+.statusList li>div>div:nth-of-type(2){
+    height: 100%;
+    background: url("../img/line.png") repeat-y 0 0/100% auto
+}
+.statusList li.active span{
+    color: #eb0e0e;
+}
+.statusList li.active>div>div:nth-of-type(1){
+    width: 0.29rem;
+    height: 0.29rem;
+    border-radius:0.29rem;
+    background: url("../img/ok.png") no-repeat 0 0/100% 100%;
+}
+.msgAlert {
+    font-size:0.24rem;
+    background:rgba(0,0,0,.8);
+    color:#fff;
+    position:absolute;
+    padding:0.1rem;
+    border-radius:0.2rem;
+    top:50%;
+    left:50%;
+    z-index: 100;
+}
+.move {
+    animation:move 2s;
+    animation-fill-mode:both;
+}
+@keyframes move {
+    0% {
+        opacity:1;
+    }
+    100% {
+        opacity:0;
+    }
+}
+.buySuccessTitle{
+    height: 0.8rem;
+    font-size: 0.3rem;
+    line-height: 0.8rem;
+    text-align: center;
+    background: #e6133c;
+    color: #fff;
+}
+.buySuccessTip{
+    width: 92%;
+    margin: 2rem 4% 1rem;
+    background: #fff;
+    height: 2.4rem;
+    position: relative;
+}
+.buySuccessTip img{
+    position: absolute;
+    left:50%;
+    margin-left:-0.4rem;
+    width: 0.8rem;
+    height: 0.8rem;
+    margin-top:0.4rem;
+}
+.buySuccessTip p{
+    width:100%;
+    font-size: 0.5rem;
+    text-align: center;
+    color: #282828;
+    position: absolute;
+    top:1.4rem;
+}
+.buySuccessBtn{
+    overflow: hidden;
+}
+.buySuccessBtn li{
+    width: 50%;
+    float: left;
+    position: relative;
+    height: 0.6rem;
+}
+.buySuccessBtn button{
+    border:none;
+    width: 2.2rem;
+    height: 0.6rem;
+    font-size:0.24rem;
+    background: #e7180d;
+    color: #fff;
+    position: absolute;
+    left:50%;
+    margin-left:-1.1rem;
+}
+.header{
+    width: 92%;
+    padding: 0 4%;
+    height: 0.7rem;
+    background: #fff;
+}
+.header p{
+    float: left;
+    height: 0.7rem;
+    line-height: 0.7rem;
+
+}
+.header p:nth-of-type(1){
+    width: 20%;
+    background:url("../img/arrowLeft.png") no-repeat 0 50%/auto 50%;
+    cursor: pointer;
+}
+.header p:nth-of-type(2){
+    width: 60%;
+    text-align: center;
+    font-size: 0.26rem;
+}
+.header p:nth-of-type(3){
+    width: 20%;
+    text-align: right;
+    color: #e7180d;
+    cursor: pointer;
+}
